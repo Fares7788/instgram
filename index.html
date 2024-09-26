@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: white;
+      width: 350px;
+      padding: 40px;
+      border: 1px solid #dbdbdb;
+      text-align: center;
+    }
+    .login-container img {
+      width: 175px;
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      background-color: #fafafa;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .or {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      color: #8e8e8e;
+      font-weight: bold;
+      font-size: 0.8em; /* Smaller font size */
+    }
+    .or::before, .or::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #dbdbdb;
+    }
+    .or:not(:empty)::before {
+      margin-right: 10px;
+    }
+    .or:not(:empty)::after {
+      margin-left: 10px;
+    }
+    .login-container .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+    .login-container .footer a {
+      color: #3897f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <img src="https://th.bing.com/th/id/R.0dec417928863d43f88a01ec70a89eaf?rik=gm9jqqylRdO2tQ&pid=ImgRaw&r=0" alt="Instagram Logo">
+  
+  <form>
+    <input type="text" placeholder="Phone number, username, or email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Log In</button>
+  </form>
+
+  <div class="or">OR</div>
+  
+  <button style="background-color: #4267b2;">Log in with Facebook</button>
+  
+  <div class="footer">
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+
+</body>
+</html>
